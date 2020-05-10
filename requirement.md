@@ -31,6 +31,7 @@ This project can be divided into 6 modules.
 ### 0. General requirements
 
 - If the currently logged-in user does not have permission to access a module, then he or she should not see the menu to access the module.
+- All APIs provided by the back-end (except login and logout) must start with `/api/`.
 - All tables should be paginated. If the total number of data in the table will definitely not exceed 100 (such as roles), then you can use front-end paging (the back-end sends all data to the front-end at one time, and the front-end controls paging), otherwise you must use back-end paging (the front-end sends page number and page size to the back-end, the back-end only returns data that meets the paging parameters).
 - There should be a search bar above each table, and users can query the data through some main fields (such as school name, student name, role name, etc.).
 - After adding, modifying, or deleting a certain data, a corresponding prompt should be given according to whether the operation was successful (for example, save successfully, delete failed, etc.). See [Message](https://element.eleme.cn/#/en-US/component/message).
@@ -78,7 +79,7 @@ This project can be divided into 6 modules.
 - Username field must be unique.
 - Password is not allowd to be stored in plain text. It should be encrypted by MD5, SHA-1 or **BCrypt**(recommended).
 - A user can have multiple roles.
-- A default user with role `administrator` must be initialized..
+- A default user with role `administrator` must be initialized.
 
 ### 5. Role module
 
@@ -94,7 +95,7 @@ This project can be divided into 6 modules.
 - Only accounts with user status enabled can log in.
 - This module must provide a method to obtain information about the currently logged in user.
 - This module must provide a API for the front-end to obtain information about the currently logged in user.
-- We use `Spring Security` int this project. You can get some infomation from [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.2.7.RELEASE/reference/html/spring-boot-features.html#boot-features-security), [Spring Security Reference](https://docs.spring.io/spring-security/site/docs/5.2.4.RELEASE/reference/htmlsingle/)
+- We use `Spring Security` int this project. You can get some infomation from [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/2.2.7.RELEASE/reference/html/spring-boot-features.html#boot-features-security), [Spring Security Reference](https://docs.spring.io/spring-security/site/docs/5.2.4.RELEASE/reference/htmlsingle/).
 
 ## Extra features
 
