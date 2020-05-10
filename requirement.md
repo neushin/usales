@@ -19,11 +19,11 @@ There are users with four roles that will use this project: director of sales, c
 
 This project can be divided into 6 modules.
 
-- **School**. Maintain all the information of schools and their colleges.
-- **Activity**. Maintain all the information on admissions activities.
-- **Student**. Maintain all the infomation of students.
-- **User**. Maintain all users of this project.
-- **Role**. Maintain all roles of this project.
+- **School**. Maintain schools and their colleges.
+- **Activity**. Maintain admissions activities.
+- **Student**. Maintain students.
+- **User**. Maintain users.
+- **Role**. Maintain roles.
 - **Security**. User log in/out. Prevent users who are not logged in from accessing this project.
 
 ## Detailed requirements for each module
